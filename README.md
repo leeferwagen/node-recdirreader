@@ -20,16 +20,16 @@ RecDirReader.filter ( filter: RegExp ): RecDirReader
 ```
 
 ### Events
-Every event listener (except of "error") becomes two arguments passed: the `file path` and the `fs.Stat` object.
+Every event listener (except of `error`) becomes two arguments passed: the `file path` and the `fs.Stat` object.
 The following event names are available:
-`directory` for directories
-`file` for files
-`symboliclink` for symlinks
-`blockdevice` for block devices
-`characterdevice` for character devices
-`fifo` for named pipes
-`socket` for sockets
-`any` for any of above event
+- `directory` for directories
+- `file` for files
+- `symboliclink` for symlinks
+- `blockdevice` for block devices
+- `characterdevice` for character devices
+- `fifo` for named pipes
+- `socket` for sockets
+- `any` for any of above event
 
 
 
