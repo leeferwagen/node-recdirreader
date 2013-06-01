@@ -1,0 +1,24 @@
+{
+  "name": "recdirreader",
+  "description": "Event based recursive directory reader",
+  "version": "0.1.0",
+  "author": {
+    "name": "Muslim Idris",
+    "email": "gelamu@gmail.com"
+  },
+  "keywords": [
+    "directory",
+    "reader",
+    "scanner",
+    "event"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Muslim-Idris/node-recdirreader"
+  },
+  "main": "./RecDirReader.js",
+  "engines": {
+    "node": "*"
+  },
+  "readmeFilename": "Readme.md",
+}
