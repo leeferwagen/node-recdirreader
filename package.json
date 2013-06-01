@@ -20,5 +20,5 @@
   "engines": {
     "node": "*"
   },
-  "readmeFilename": "Readme.md",
+  "readmeFilename": "README.md",
 }
