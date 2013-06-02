@@ -6,6 +6,12 @@
     "name": "Muslim Idris",
     "email": "gelamu@gmail.com"
   },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Muslim-Idris/node-recdirreader/MIT-LICENSE.txt"
+    }
+  ],
   "keywords": [
     "directory",
     "reader",
@@ -20,5 +26,5 @@
   "engines": {
     "node": "*"
   },
-  "readmeFilename": "README.md",
+  "readmeFilename": "README.md"
 }
