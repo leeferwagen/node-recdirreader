@@ -1,3 +1,5 @@
+'use strict';
+
 var lstat = require('fs').lstat;
 var readdir = require('fs').readdir;
 var isArray = require('util').isArray;
@@ -13,7 +15,7 @@ var joinPath = require('path').join;
  */
 
 function RecDirReader(dir, filter) {
-  if (this.dir === undefined) return new RecDirReader(dir, filter);
+  if (this === undefined) return new RecDirReader(dir, filter);
   this._wc = 0;
   this._dir = dir || '.';
   this._filter = filter || /.*/;
@@ -84,6 +86,8 @@ RecDirReader.prototype.scan = function(dir) {
   readdir(dir, function(err, filenames) {
     if (err) {
       self._emitError(err);
+    } else if (filenames.length === 0) {
+      self.emit('empty', dir);
     } else {
       filenames.forEach(function(filename) {
         var file = joinPath(dir, filename);
